@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>driller</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        *{
+           padding: 0;
+            margin: 0;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+           /* padding: 10px;
+            margin-top: 20px;
+            position: absolute;
+            top: 0;*/
+            
+        }
+        .flex-container > div {
+            height: auto;
+           /* background-color: red;*/
+           padding: 20px;
+           box-sizing: border-box;
+
+        }
+        .right {
+            flex: 40%;
+            text-align: right;
+            border-bottom: 1px solid rgba(65, 62, 62, 0.1);
+        }
+        .left {
+            flex: 60%;
+            border-bottom: 1px solid rgba(65, 62, 62, 0.1);
+        }
+        .full {
+            flex: 100%;
+            width: 100%;
+        }
+        .left > a {
+            display: inline;
+            text-decoration: none;
+            padding: 35px 5px;
+            font-size: 18px;
+            color: rgb(112, 107, 107);
+            
+        }
+        .right > a{
+            /*float: right;*/
+            padding: 35px 5px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .right > a:last-child {
+            border: none;
+            background-color: #ea4c89;
+            border-radius: 8px;
+            padding: 7px 10px;
+            color: white;
+        }
+        
+        .right >a:nth-child(2){
+            color: rgb(112, 107, 107);
+        }
+        .left > a:first-child {
+            font-family: 'Pacifico', cursive;
+           /* font-weight: bold;*/
+            color: black;
+        }
+        .full > a {
+            text-decoration: none;
+            padding: 8px 20px;
+            font-size: 20px;
+            border: 1px solid rgba(65, 62, 62, 0.5);
+            border-radius: 5px;
+            margin-left: 70px;
+            color: rgb(112, 107, 107);
+        }
+        .main {
+            text-align: center;
+        }
+        .main > h1 {
+            padding: 50px;
+            font-size: 30px;
+        }
+        .cart > div {
+            width: 24%;
+            height: 300px;
+            background-color: aqua;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-left: 10px;
+            display: inline;
+            border-radius: 15px;
+        }
+        .cart > div > iframe {
+            border-radius: 15px;
+        } 
+        .inspiration {
+            position: relative;
+            width: auto;
+  /*          border-radius: 100px;
+            border: 5px solid black;*/
+            top: 100px;
+            left: 100px;
+            
+        }
+        .inspiration > div {
+            position: relative;
+        }
+        .inspiration > ul > li{
+            list-style-type: none;
+           
+            position: relative;
+            padding: 15px;
+        }
+        .inspiration > ul > li > i {
+            /* clear: left;
+             position: absolute;
+             left: 40px;
+             top: 20px;
+             padding: 10px;*/
+             font-size: 40px;
+            /* float: left;*/
+        }
+        .inspiration > ul > li > h3 {
+           /* float: left;*/
+           position: absolute;
+           top: 20px;
+           left: 65px;
+           font-size: 1.5vw;
+        }
+        .inspiration > ul > li > p {
+            position: absolute;
+            top: 45px;
+            left: 65px;
+            font-size: 1.2vw;
+        }
+        .tab {
+            background-color: rgb(107, 101, 101);
+            width: 25%;
+            height: 430px;
+            border: none;
+            border-radius: 10px 0 0 10px;
+        }
+        .tab1 {
+            background-color: rgba(238, 240, 238, 0.966);
+            width: 15%;
+            height: 420px;
+            position: absolute;
+            top: 0;
+            left: 25%;
+            font-size: 1.1vw;
+            padding-top: 10px;
+            border: none;
+            border-radius: 0 10px 10px 0;
+        }
+        .tab1 li:first-child{
+          font-weight: bold;
+        }
+        .bi-app {
+            color: rgb(68, 68, 199);
+        }
+        .bi-activity {
+            color: pink;
+        }
+        .bi-check-square-fill {
+            color: rgb(53, 188, 221);
+        }
+        .bi-chat-left-text {
+            color: rgb(185, 127, 34);
+        }
+    </style>
+</head>
+<body>
+    <div class="inspiration">
+    <ul class="tab">
+        <li>
+            <i class="bi bi-app"></i>
+            <h3>Explore Design Work</h3>
+            <p>trending Design to inspire you </p>
+        </li>
+        <li>
+            <i class="bi bi-activity"></i>
+            <h3>News & Noteworthy</h3>
+            <p>Up-and-coming designers </p>
+        </li>
+        <li>
+            <i class="bi bi-check-square-fill"></i>
+            <h3>Playoffs</h3>
+            <p>Work designers are riffing on </p>
+        </li>
+        <li>
+            <i class="bi bi-chat-left-text"></i>
+            <h3>Blog</h3>
+            <p>Interview, tutarials, and more </p>
+        </li>
+    </ul>
+    <ul class="tab1">
+        <li>Browser categeries</li>
+        <li>Animation</li>
+        <li>Branding</li>
+        <li>Illustration</li>
+        <li>Mobile</li>
+        <li>Print</li>
+        <li>Product Design</li>
+        <li>Typography</li>
+        <li>Web Design</li>
+    </ul>
+    </div>
+    <div class="flex-container">
+        <div class="left">
+            <a href="#">dribbble</a>
+            <a href="#">Inspiration</a>
+            <a href="#">Find Work</a>
+            <a href="#">Learn Design</a>
+            <a href="#">Go Pro</a>
+            <a href="#">Hire Designer</a>
+        </div>
+        <div class="right">
+            <i class="bi bi-search"></i>
+            <a href="#">Sign in</a>
+            <a href="#">Sign up</a>
+        </div>
+        <div class="full">
+            <a href="#">Popular <i class="bi bi-caret-down-fill"></i></a>
+        </div>
+        <div class="full main">
+            <h1>UI Design</h1>
+            <p>132,213 inspirational designs, illustrations, and graphic </p>
+                <p>elements from the world’s best designers.
+                Want more inspiration? Browse our search results...</p>
+        </div>
+        <div class="full cart">
+            <div>
+                <iframe width="100%" height="280px" src="https://www.youtube.com/embed/sxwtihB9U3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div>
+                <iframe width="100%" height="280" src="https://www.youtube.com/embed/sxwtihB9U3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div>
+                <iframe width="100%" height="280" src="https://www.youtube.com/embed/sxwtihB9U3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div>
+                <iframe width="100%" height="280" src="https://www.youtube.com/embed/sxwtihB9U3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
